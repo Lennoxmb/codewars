@@ -13,3 +13,36 @@ function numberSum(num) {
     }
     return total;
 }
+
+function simpleMultiplication(number) {
+    if (number % 2 === 0){
+        return number * 8
+    } else {
+        return number * 9
+    }
+}
+
+function century(year) {
+    return Math.ceil(year/100);
+}
+
+function longest(s1, s2) {
+    let result = s1.replace(/(.)\1+/);
+    let results = s2.replace(/(.)\1+/);
+    return result
+    return results
+}
+
+function isTriangle(a,b,c){
+    return a > 1 && b > 1 && c > 1;
+}
+
+function litres(time) {
+    let drink = time * .5;
+    if(time >= 1){
+        return Math.floor(drink);
+    } else {
+        return 0;
+    }
+}
+
